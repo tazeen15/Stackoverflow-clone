@@ -43,24 +43,6 @@ function CardFeatures({ data }) {
 	);
 };
 
-function CardAction(props) {
-	
-	const KEY = (process.env.REACT_APP_STRIPE_PUBLISH_KEY).toString().substring(0, 107);
-
-	return (
-		props.type === "basic" ? 
-		<stripe-buy-button
-			buy-button-id={(process.env.REACT_APP_STRIPE_BASIC_KEY).toString().substring(0, 32)}
-			publishable-key={KEY}
-		>
-		</stripe-buy-button> :
-		<stripe-buy-button
-			buy-button-id={(process.env.REACT_APP_STRIPE_MED_KEY).toString().substring(0, 32)}
-			publishable-key={KEY}
-		>
-		</stripe-buy-button>	
-	);
-};
 
 function PricingCard(props) {	
     const { 
