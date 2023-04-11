@@ -93,7 +93,7 @@ function QuestionDetails() {
     }
 
     const handleShare = () => {
-        const url = "https://stackoverflow-backend-w6do.onrender.com/";
+        const url = "https://stackoverflow-backend-w6do.onrender.com";
         copy(url + location.pathname);
         alert("Url copied!!\nUse this to share the page.\n" + url + location.pathname);
     }
