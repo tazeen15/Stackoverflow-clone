@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const API = axios.create({ "https://stackoverflow-backend-w6do.onrender.com",
-                         });
+const API = axios.create({
+  baseURL: "https://stackoverflowbackend-ewg1.onrender.com",
+});
+
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem("Profile")) {
