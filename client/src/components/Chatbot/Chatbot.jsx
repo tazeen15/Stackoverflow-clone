@@ -45,7 +45,7 @@ const Chatbot = ({ setBotIsOpen }) => {
   };
 
   const generateResponse = async (text) => {
-    const API_KEY = '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';
+    const API_KEY = process.env.OPEN_API_KEY;
   
     const options = {
       method: 'POST',
